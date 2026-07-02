@@ -1,0 +1,15 @@
+# El Jinete
+
+> El Jinete — 6 locations. Menu and online ordering (pickup + delivery) per location.
+
+## Locations
+- [Athens](https://eljinetemexicanrestaurants.com/athens/): 2011 Congress Pkwy S, Athens, TN, 37303
+- [Cleveland](https://eljinetemexicanrestaurants.com/cleveland/): 1011 Paul Huff Pkwy NW, Cleveland, TN, 37312
+- [Hixson](https://eljinetemexicanrestaurants.com/hixson/): 5031 Hixson Pike, Hixson, TN, 37343
+- [Oakridge](https://eljinetemexicanrestaurants.com/oakridge/): 770 Briarcliff Ave, Oak Ridge, TN, 37830
+- [Ooltewah](https://eljinetemexicanrestaurants.com/ooltewah/): 5559 Little Debbie Pkwy #101, Ooltewah, TN, 37363
+- [Powell](https://eljinetemexicanrestaurants.com/powell/): 237 E Emory Rd #117, Powell, TN, 37849
+
+## Pages
+- [Menu](https://eljinetemexicanrestaurants.com/menu/)
+- [All Locations](https://eljinetemexicanrestaurants.com/locations/)

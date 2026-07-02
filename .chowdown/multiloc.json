@@ -1,0 +1,22 @@
+{
+  "brand": "El Jinete",
+  "domain": "eljinetemexicanrestaurants.com",
+  "locations": 6,
+  "pages": [
+    "/",
+    "/locations/",
+    "/menu/",
+    "/athens/",
+    "/athens/vip/",
+    "/cleveland/",
+    "/cleveland/vip/",
+    "/hixson/",
+    "/hixson/vip/",
+    "/oakridge/",
+    "/oakridge/vip/",
+    "/ooltewah/",
+    "/ooltewah/vip/",
+    "/powell/",
+    "/powell/vip/"
+  ]
+}

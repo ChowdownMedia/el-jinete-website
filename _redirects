@@ -1,0 +1,13 @@
+# Old per-location subdomains -> consolidated location pages
+https://athens.eljinetemexicanrestaurants.com /athens/ 301
+https://athens.eljinetemexicanrestaurants.com/* /athens/ 301
+https://cleveland.eljinetemexicanrestaurants.com /cleveland/ 301
+https://cleveland.eljinetemexicanrestaurants.com/* /cleveland/ 301
+https://hixson.eljinetemexicanrestaurants.com /hixson/ 301
+https://hixson.eljinetemexicanrestaurants.com/* /hixson/ 301
+https://oakridge.eljinetemexicanrestaurants.com /oakridge/ 301
+https://oakridge.eljinetemexicanrestaurants.com/* /oakridge/ 301
+https://ooltewah.eljinetemexicanrestaurants.com /ooltewah/ 301
+https://ooltewah.eljinetemexicanrestaurants.com/* /ooltewah/ 301
+https://powell.eljinetemexicanrestaurants.com /powell/ 301
+https://powell.eljinetemexicanrestaurants.com/* /powell/ 301
