@@ -131,6 +131,9 @@ h1,h2,h3{line-height:1.04}
 .footer-contact a{color:var(--gold)}
 .footer-social{display:flex;gap:16px;margin-top:18px;font-size:14px}
 .footer-legal{max-width:var(--maxw);margin:22px auto 0;font-size:13px;color:#b39e8d;text-align:center}
+.footer-powered{max-width:var(--maxw);margin:8px auto 0;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#b39e8d;text-align:center}
+.footer-powered a{color:var(--gold);font-weight:700}
+.footer-powered a:hover{color:var(--gold-lt)}
 
 /* ---------- responsive ---------- */
 @media (max-width:900px){
