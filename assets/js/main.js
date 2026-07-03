@@ -680,4 +680,45 @@
   }
   setActiveNav();
 
+  /* -----------------------------------------------------------------------
+     REVIEWS ROW — Horizontal scroll with arrows + gentle auto-advance
+     ----------------------------------------------------------------------- */
+  var rcTrack = document.getElementById('reviews-track');
+  if (rcTrack) {
+    var rcPrev = document.getElementById('reviews-prev');
+    var rcNext = document.getElementById('reviews-next');
+    var rcReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function rcStep() {
+      var card = qs('.review', rcTrack);
+      if (!card) return rcTrack.clientWidth * 0.8;
+      var cs = getComputedStyle(rcTrack);
+      var gap = parseInt(cs.columnGap || cs.gap || '26', 10) || 26;
+      return card.getBoundingClientRect().width + gap;
+    }
+    function rcScroll(dir) {
+      rcTrack.scrollBy({ left: dir * rcStep(), behavior: 'smooth' });
+    }
+    on(rcPrev, 'click', function () { rcScroll(-1); });
+    on(rcNext, 'click', function () { rcScroll(1); });
+
+    if (!rcReduce) {
+      var rcPaused = false;
+      on(rcTrack, 'mouseenter', function () { rcPaused = true; });
+      on(rcTrack, 'mouseleave', function () { rcPaused = false; });
+      on(rcTrack, 'focusin', function () { rcPaused = true; });
+      on(rcTrack, 'focusout', function () { rcPaused = false; });
+      on(rcTrack, 'touchstart', function () { rcPaused = true; }, { passive: true });
+      setInterval(function () {
+        if (rcPaused) return;
+        var maxScroll = rcTrack.scrollWidth - rcTrack.clientWidth - 2;
+        if (rcTrack.scrollLeft >= maxScroll) {
+          rcTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          rcScroll(1);
+        }
+      }, CONFIG.reviewInterval);
+    }
+  }
+
 })();
